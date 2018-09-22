@@ -22,7 +22,15 @@
               "src/favicon.ico",
               "src/assets"
             ],
+
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/sass"
+              ]
+            },
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/sass/styles.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -72,6 +80,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
+              "src/sass/styles.scss",
               "src/styles.css"
             ],
             "scripts": [],
@@ -123,5 +132,10 @@
       }
     }
   },
-  "defaultProject": "recipe-app"
+  "defaultProject": "recipe-app",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

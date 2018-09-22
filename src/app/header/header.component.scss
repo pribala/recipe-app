@@ -1,0 +1,15 @@
+@import 'variables';
+.nav-button {
+    background-color: $nav-button;
+    border: none;
+    width: $nav-button-width;
+    color: white;
+    font-weight: bold;
+    height: $nav-button-height;
+    font-size: 18px;
+}
+
+.nav {
+    background-color: $medium-gray;
+    height: $nav-height;
+}
