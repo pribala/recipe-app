@@ -1,0 +1,11 @@
+
+@import 'variables';
+.wrapper {
+    width: 100%;
+    padding: 20px;
+    height: 100vh;
+}
+
+.wrapper:first-child {
+    // border-right: 1px solid $medium-gray;
+}
