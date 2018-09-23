@@ -4,3 +4,13 @@
 * {
     font-family: 'Playfair Display', serif;
 }
+
+.clickable-text {
+    text-decoration: none;
+    color: $link-color !important;
+    font-weight: bold;
+}
+
+.clickable-text:hover {
+    text-decoration: underline;
+}
