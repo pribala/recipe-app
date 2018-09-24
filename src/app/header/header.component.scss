@@ -10,6 +10,12 @@
 }
 
 .nav {
-    background-color: $medium-gray;
+    //background-color: $nav-background;
     height: $nav-height;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    color: $nav-button;
+    font-weight: bold;
 }

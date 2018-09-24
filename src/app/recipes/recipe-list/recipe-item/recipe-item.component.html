@@ -1,7 +1,7 @@
-<div class="card" style="width: 250px;">
-    <img class="card-img-top" [src]="recipe.imagePath" alt="{{recipe.name}}">
-    <div class="card-body">
-      <h5 class="card-title"><a class="clickable-text" href="#">{{recipe.name}}</a></h5>
-      <p class="card-text"> {{recipe.description}}</p>
-    </div>
+<div fxLayout="row" fxLayoutAlign="start center" class="recipe-card">
+  <img class="recipe-image" [src]="recipe.imagePath" alt="{{recipe.name}}">
+  <div fxLayout="column" fxLayoutAlign="start start">
+    <h5 class="clickable-text" (click)=showDetails()>{{recipe.name}}</h5>
+    <div>{{recipe.description}}</div>
   </div>
+</div>

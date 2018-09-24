@@ -1,3 +1,10 @@
-<app-shopping-edit></app-shopping-edit>
-<hr>
-<div>Shopping List</div>
+<div class="container-fluid">
+  <app-shopping-edit></app-shopping-edit>
+  <hr>
+  <div class="clickable-text">Shopping List</div>
+  <ul class="list-group">
+    <a class="list-group-item" style="cursor:pointer;" *ngFor="let ingredient of ingredients">
+      {{ingredient.name}} - {{ingredient.quantity}} {{ingredient.unit}}
+    </a>
+  </ul>
+</div>
