@@ -1,19 +1,23 @@
 <div fxLayout="row" fxLayoutAlign="start start" style="width: 60%;">
   <form>
     <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start start">
-      <div class="form-group"  style="width: 80%;">
+      <div class="form-group"  style="width: 70%;">
         <label>Name:</label>
-        <input type="text" class="form-control" id="name">
+        <input type="text" class="form-control" id="name" #name>
       </div>
       <div class="form-group"  style="width: 20%;">
         <label>Quantity:</label>
-        <input type="number" class="form-control" id="quantity">
+        <input type="number" class="form-control" id="quantity" #quantity>
       </div>
+      <div class="form-group"  style="width: 10%;">
+          <label>Unit:</label>
+          <input type="text" class="form-control" id="unit" #unit>
+        </div>
     </div>
     <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" fxLayoutAlign="start start">
-      <button class="btn btn-success">Add</button>
-      <button  class="btn btn-danger">Delete</button>
-      <button class="btn btn-warning">Clear</button>
+      <button class="btn btn-success" (click)="addIngredient()">Add</button>
+      <button  class="btn btn-danger" (click)="deleteIngredient()">Delete</button>
+      <button class="btn btn-warning" (click)="clear()">Clear</button>
     </div>
   </form>
 </div>

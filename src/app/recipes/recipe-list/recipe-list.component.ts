@@ -20,7 +20,7 @@ export class RecipeListComponent implements OnInit {
     this.recipeSelected.emit(this.recipes[0]);
   }
 
-  selectedRecipe(item) {
+  selectedRecipe(item: Recipe) {
     this.recipeSelected.emit(item);
   }
 
