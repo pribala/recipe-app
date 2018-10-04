@@ -23,11 +23,10 @@ export class ShoppingEditComponent implements OnInit {
   }
 
   clear() {
- 
   }
 
   deleteIngredient() {
-    
+
   }
 
 }
