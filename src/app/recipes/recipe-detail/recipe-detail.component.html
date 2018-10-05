@@ -4,6 +4,11 @@
       <h5 class="card-title"><a class="clickable-text" href="#">{{recipe.name}}</a></h5>
       <p class="card-text"> {{recipe.description}}</p>
       <h6>Ingredients</h6>
+      <ul>
+        <li *ngFor="let ingredient of recipe.ingredients">
+          {{ingredient.name}} - {{ingredient.quantity}} {{ingredient.unit}}
+        </li>
+      </ul>
     </div>
 </div>
 <div class="dropdown" appDropdown [className]="'show'" [menu]="menu">
@@ -11,7 +16,7 @@
       Manage Recipe <span class="caret"></span>
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" #menu>
-      <div><a href="#">Add Ingredients to Shopping List</a></div>
+      <div><a href="#" (click)="addToShoppingList()">Add Ingredients to Shopping List</a></div>
       <div><a href="#">Edit Recipe</a></div>
       <div><a href="#">Delete Recipe</a></div>
     </div>
